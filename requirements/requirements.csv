@@ -1,0 +1,10 @@
+Identifier ,Partner,"Competency Question /
+ Natural language sentence (fact)",Answer,"Status (Proposed, Accepted, Rejected, Pending, Deprecated)",Superseded by,"Priority 
+(High, Medium, Low)",Comments,Extracted from (provenance)
+priv-1,,There are two types of rules: Permission and Prohibition,,,,,,
+priv-2,,An asset can have a policy,,,,,,
+priv-3,,A policy contains rules,,,,,,
+priv-4,,A rule can have a target,,,,,,
+priv-5,,There are two types of target: Friends, Eveyone or None,,,,,,
+priv-6,,A rule has an action,,,,,,
+priv-7,,There are two types of action: Visibility and Accessibility,,,,,,
