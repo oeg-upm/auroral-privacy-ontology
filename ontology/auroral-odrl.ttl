@@ -15,6 +15,7 @@
                                                              "Raúl García Castro" ;
                                                   dc:description "This ontology aims at modelling the privacy for the AURORAL project." ;
                                                   dc:title "The AURORAL Privacy Ontology" ;
+                                                  <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
                                                   owl:versionInfo "0.0.1" .
 
 #################################################################
@@ -31,6 +32,10 @@ dc:description rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/elements/1.1/title
 dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
