@@ -1,0 +1,62 @@
+{
+  "@context" : {
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Permission" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Permission"
+    },
+    "hasName" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasName"
+    },
+    "hasAction" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasAction",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Prohibition" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Prohibition"
+    },
+    "hasRuleTarget" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasRuleTarget",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "RuleTarget" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#RuleTarget"
+    },
+    "hasPolicy" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasPolicy",
+      "@type" : "@id"
+    },
+    "Rule" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Rule"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "definesRule" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#definesRule",
+      "@type" : "@id"
+    },
+    "Policy" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Policy"
+    },
+    "Action" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Action"
+    },
+    "Item" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Item"
+    },
+    "hasDescription" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasDescription"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    }
+  }
+}
