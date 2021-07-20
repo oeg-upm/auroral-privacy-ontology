@@ -1,0 +1,79 @@
+@prefix : <https://auroral.iot.linkeddata.es/tests/priv#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+:TestsuitePriv rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
+            dcterms:source <https://auroral.iot.linkeddata.es/def/priv>.
+
+:Test1 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+        dc:description "There are two types of action: Visibility and Accessibility" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Accessibility type Action" .
+
+:Test2 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+        dc:description "There are two types of action: Visibility and Accessibility" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv;       
+       <https://w3id.org/def/vtc#desiredBehaviour> "Visibility type Action" .
+
+:Test3 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+        dc:description "A rule has an action" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv;                
+       <https://w3id.org/def/vtc#desiredBehaviour> "Rule hasAction Action" .
+
+:Test4 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+        dc:description "There are two types of target: Friends, Eveyone or None" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv;               
+       <https://w3id.org/def/vtc#desiredBehaviour> "None type RuleTarget" .
+
+:Test5 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+        dc:description "There are two types of target: Friends, Eveyone or None" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv;         
+       <https://w3id.org/def/vtc#desiredBehaviour> "All type RuleTarget" .
+
+:Test6 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+        dc:description "There are two types of target: Friends, Eveyone or None" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv;         
+       <https://w3id.org/def/vtc#desiredBehaviour> "Friends type RuleTarget" .
+
+:Test7 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+        dc:description "A rule can have a target" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv;                  
+       <https://w3id.org/def/vtc#desiredBehaviour> "Rule hasRuleTarget RuleTarget" .
+
+:Test8 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+        dc:description "A policy contains rules" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv; 
+       <https://w3id.org/def/vtc#desiredBehaviour> "Policy definesRule Rule" .
+
+:Test9 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+         dc:description "An asset can have a policy" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv;       
+       <https://w3id.org/def/vtc#desiredBehaviour> "Item hasPolicy Policy" .
+
+:Test10 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+         dc:description "There are two types of rules: Permission and Prohibition" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv; 
+       <https://w3id.org/def/vtc#desiredBehaviour> "Prohibition subclassOf Rule" .
+
+:Test11 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+         dc:description "There are two types of rules: Permission and Prohibition" ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuitePriv;        
+       <https://w3id.org/def/vtc#desiredBehaviour> "Permission subClassOf Rule" .
