@@ -1,15 +1,15 @@
-@prefix : <https://auroral.iot.linkeddata.es/def/privacy#> .
+@prefix : <https://auroral.iot.linkeddata.es/def/priv#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix core: <https://auroral.iot.linkeddata.es/def/core#> .
-@prefix priv: <https://auroral.iot.linkeddata.es/def/privacy#> .
+@prefix priv: <https://auroral.iot.linkeddata.es/def/priv#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://auroral.iot.linkeddata.es/def/privacy#> .
+@base <https://auroral.iot.linkeddata.es/def/priv#> .
 
-<https://auroral.iot.linkeddata.es/def/privacy#> rdf:type owl:Ontology ;
+<https://auroral.iot.linkeddata.es/def/priv#> rdf:type owl:Ontology ;
                                                   dc:creator "Alba Fernández Izquierdo" ,
                                                              "Andrea Cimmino" ,
                                                              "Raúl García Castro" ;
@@ -42,28 +42,28 @@ dc:title rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://auroral.iot.linkeddata.es/def/privacy#definesRule
+###  https://auroral.iot.linkeddata.es/def/priv#definesRule
 priv:definesRule rdf:type owl:ObjectProperty ;
                  rdfs:domain priv:Policy ;
                  rdfs:range priv:Rule ;
                  rdfs:label "defines rule" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#hasAction
+###  https://auroral.iot.linkeddata.es/def/priv#hasAction
 priv:hasAction rdf:type owl:ObjectProperty ;
                rdfs:domain priv:Rule ;
                rdfs:range priv:Action ;
                rdfs:label "has action" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#hasPolicy
+###  https://auroral.iot.linkeddata.es/def/privy#hasPolicy
 priv:hasPolicy rdf:type owl:ObjectProperty ;
                rdfs:domain core:Item ;
                rdfs:range priv:Policy ;
                rdfs:label "has policy" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#hasRuleTarget
+###  https://auroral.iot.linkeddata.es/def/priv#hasRuleTarget
 priv:hasRuleTarget rdf:type owl:ObjectProperty ;
                    rdfs:domain priv:Rule ;
                    rdfs:range priv:RuleTarget ;
@@ -74,12 +74,12 @@ priv:hasRuleTarget rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://auroral.iot.linkeddata.es/def/privacy#hasDescription
+###  https://auroral.iot.linkeddata.es/def/privy#hasDescription
 priv:hasDescription rdf:type owl:DatatypeProperty ;
                     rdfs:label "has description" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#hasName
+###  https://auroral.iot.linkeddata.es/def/priv#hasName
 priv:hasName rdf:type owl:DatatypeProperty ;
              rdfs:label "has name" .
 
@@ -97,7 +97,7 @@ core:Item rdf:type owl:Class ;
           rdfs:label "Item" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#Action
+###  https://auroral.iot.linkeddata.es/def/priv#Action
 priv:Action rdf:type owl:Class ;
             rdfs:subClassOf core:Item ,
                             [ rdf:type owl:Restriction ;
@@ -107,13 +107,13 @@ priv:Action rdf:type owl:Class ;
             rdfs:label "Action" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#Permission
+###  https://auroral.iot.linkeddata.es/def/priv#Permission
 priv:Permission rdf:type owl:Class ;
                 rdfs:subClassOf priv:Rule ;
                 rdfs:label "Permission" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#Policy
+###  https://auroral.iot.linkeddata.es/def/priv#Policy
 priv:Policy rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty priv:hasDescription ;
@@ -126,13 +126,13 @@ priv:Policy rdf:type owl:Class ;
             rdfs:label "Policy" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#Prohibition
+###  https://auroral.iot.linkeddata.es/def/priv#Prohibition
 priv:Prohibition rdf:type owl:Class ;
                  rdfs:subClassOf priv:Rule ;
                  rdfs:label "Prohibition" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#Rule
+###  https://auroral.iot.linkeddata.es/def/priv#Rule
 priv:Rule rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty priv:hasDescription ;
@@ -141,7 +141,7 @@ priv:Rule rdf:type owl:Class ;
           rdfs:label "Rule" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#RuleTarget
+###  https://auroral.iot.linkeddata.es/def/priv#RuleTarget
 priv:RuleTarget rdf:type owl:Class ;
                 rdfs:label "Rule Target" .
 
@@ -150,31 +150,31 @@ priv:RuleTarget rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  https://auroral.iot.linkeddata.es/def/privacy#Accessibility
+###  https://auroral.iot.linkeddata.es/def/priv#Accessibility
 priv:Accessibility rdf:type owl:NamedIndividual ,
                             priv:Action ;
                    rdfs:label "Accessibility" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#All
+###  https://auroral.iot.linkeddata.es/def/priv#All
 priv:All rdf:type owl:NamedIndividual ,
                   priv:RuleTarget ;
          rdfs:label "All" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#Friends
+###  https://auroral.iot.linkeddata.es/def/priv#Friends
 priv:Friends rdf:type owl:NamedIndividual ,
                       priv:RuleTarget ;
              rdfs:label "Friends" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#None
+###  https://auroral.iot.linkeddata.es/def/priv#None
 priv:None rdf:type owl:NamedIndividual ,
                    priv:RuleTarget ;
           rdfs:label "None" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privacy#Visibility
+###  https://auroral.iot.linkeddata.es/def/priv#Visibility
 priv:Visibility rdf:type owl:NamedIndividual ,
                          priv:Action ;
                 rdfs:label "Visibility" .
