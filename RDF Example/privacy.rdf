@@ -1,0 +1,10 @@
+@prefix priv: https://auroral.iot.linkeddata.es/def/privacy#,
+@prefix core: https://auroral.iot.linkeddata.es/def/core#,
+ core:Service1 a core:Item, 
+            priv:hasPOlicy priv:Policy1010, 
+
+priv:Policy1010 priv:definesRule  priv:Permissionservice1, 
+
+priv:Permissionservice1 a priv:Permission, 
+                        priv:hasAction priv:Accessibility, 
+                        priv:hasTargetRule priv:movie 
