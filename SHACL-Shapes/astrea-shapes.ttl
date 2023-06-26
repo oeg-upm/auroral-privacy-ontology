@@ -1,0 +1,149 @@
+@prefix :      <https://auroral.iot.linkeddata.es/def/priv#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://astrea.linkeddata.es/shapes#800308cb4ec316a173f265ab9a14b5c2>
+        a            sh:PropertyShape ;
+        rdfs:label   "has policy" ;
+        sh:class     :Policy ;
+        sh:name      "has policy" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasPolicy .
+
+<https://astrea.linkeddata.es/shapes#4032f63e39305b2441f8b0a4d0292801>
+        a               sh:NodeShape ;
+        rdfs:label      "Policy" ;
+        sh:name         "Policy" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#13526e445ddbcc895b77d338f4bb966b> , <https://astrea.linkeddata.es/shapes#f68f124800aa7dad258a88803de4574f> , <https://astrea.linkeddata.es/shapes#8358bf4384b7f7568b56764dd54cacbc> ;
+        sh:targetClass  :Policy .
+
+<https://astrea.linkeddata.es/shapes#13526e445ddbcc895b77d338f4bb966b>
+        a            sh:PropertyShape ;
+        rdfs:label   "defines rule" ;
+        sh:class     :Rule ;
+        sh:name      "defines rule" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :definesRule .
+
+<https://astrea.linkeddata.es/shapes#5e5542b1ae9729a062b912ebc987d5d4>
+        a               sh:NodeShape ;
+        rdfs:label      "Rule" ;
+        sh:name         "Rule" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#22308de3673cccf39acad414b7c2e9c8> , <https://astrea.linkeddata.es/shapes#7cf7031ff9a0defbfb4d5929963d2057> , <https://astrea.linkeddata.es/shapes#628f3074c616c0986d72cf97219260de> ;
+        sh:targetClass  :Rule .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#24a6abf2ab83def1d702cab08579cd21> , <https://astrea.linkeddata.es/shapes#13526e445ddbcc895b77d338f4bb966b> , <https://astrea.linkeddata.es/shapes#d921c2ba89e2ace26b71d3fb9b6d53bb> , <https://astrea.linkeddata.es/shapes#800308cb4ec316a173f265ab9a14b5c2> , <https://astrea.linkeddata.es/shapes#9fa96f05b28d14757b7294d1db599e7d> , <https://astrea.linkeddata.es/shapes#770ca2fdcf7d890149b92347cf34616a> , <https://astrea.linkeddata.es/shapes#7cf7031ff9a0defbfb4d5929963d2057> , <https://astrea.linkeddata.es/shapes#d2811a4f00d92a74d4c4ede6bd6c807b> , <https://astrea.linkeddata.es/shapes#5e5542b1ae9729a062b912ebc987d5d4> , <https://astrea.linkeddata.es/shapes#628f3074c616c0986d72cf97219260de> , <https://astrea.linkeddata.es/shapes#8358bf4384b7f7568b56764dd54cacbc> , <https://astrea.linkeddata.es/shapes#023808c2c0041fc67c44197a865f22ba> , <https://astrea.linkeddata.es/shapes#f4f3c4b9e937234adfb1dd92bf8ceb79> , <https://astrea.linkeddata.es/shapes#22308de3673cccf39acad414b7c2e9c8> , <https://astrea.linkeddata.es/shapes#115c9519bcd7602763023ed6aef3ad5c> , <https://astrea.linkeddata.es/shapes#9e85dbf42c101f7a1e4904663f9000f0> , <https://astrea.linkeddata.es/shapes#f68f124800aa7dad258a88803de4574f> , <https://astrea.linkeddata.es/shapes#4032f63e39305b2441f8b0a4d0292801> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/355533020> .
+
+<https://astrea.linkeddata.es/shapes#628f3074c616c0986d72cf97219260de>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasDescription .
+
+<https://astrea.linkeddata.es/shapes#f4f3c4b9e937234adfb1dd92bf8ceb79>
+        a               sh:NodeShape ;
+        rdfs:label      "Prohibition" ;
+        sh:name         "Prohibition" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Prohibition .
+
+<https://astrea.linkeddata.es/shapes#22308de3673cccf39acad414b7c2e9c8>
+        a            sh:PropertyShape ;
+        rdfs:label   "has rule target" ;
+        sh:class     :RuleTarget ;
+        sh:name      "has rule target" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasRuleTarget .
+
+<https://astrea.linkeddata.es/report/355533020>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "https://auroral.iot.linkeddata.es/def/priv/ontology.ttl" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#f68f124800aa7dad258a88803de4574f>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasName .
+
+<https://astrea.linkeddata.es/shapes#770ca2fdcf7d890149b92347cf34616a>
+        a            sh:PropertyShape ;
+        rdfs:label   "has name" ;
+        sh:name      "has name" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :hasName .
+
+<https://astrea.linkeddata.es/shapes#8358bf4384b7f7568b56764dd54cacbc>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasDescription .
+
+<https://astrea.linkeddata.es/shapes#d921c2ba89e2ace26b71d3fb9b6d53bb>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasDescription .
+
+<https://astrea.linkeddata.es/shapes#115c9519bcd7602763023ed6aef3ad5c>
+        a            sh:PropertyShape ;
+        rdfs:label   "has description" ;
+        sh:name      "has description" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :hasDescription .
+
+<https://astrea.linkeddata.es/shapes#7cf7031ff9a0defbfb4d5929963d2057>
+        a            sh:PropertyShape ;
+        rdfs:label   "has action" ;
+        sh:class     :Action ;
+        sh:name      "has action" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasAction .
+
+<https://astrea.linkeddata.es/shapes#9fa96f05b28d14757b7294d1db599e7d>
+        a               sh:NodeShape ;
+        rdfs:label      "Rule Target" ;
+        sh:name         "Rule Target" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :RuleTarget .
+
+<https://astrea.linkeddata.es/shapes#d2811a4f00d92a74d4c4ede6bd6c807b>
+        a               sh:NodeShape ;
+        rdfs:label      "Item" ;
+        sh:name         "Item" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#800308cb4ec316a173f265ab9a14b5c2> , <https://astrea.linkeddata.es/shapes#9e85dbf42c101f7a1e4904663f9000f0> ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#Item> .
+
+<https://astrea.linkeddata.es/shapes#24a6abf2ab83def1d702cab08579cd21>
+        a               sh:NodeShape ;
+        rdfs:label      "Permission" ;
+        sh:name         "Permission" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Permission .
+
+<https://astrea.linkeddata.es/shapes#023808c2c0041fc67c44197a865f22ba>
+        a               sh:NodeShape ;
+        rdfs:label      "Action" ;
+        sh:name         "Action" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#d921c2ba89e2ace26b71d3fb9b6d53bb> ;
+        sh:targetClass  :Action .
+
+<https://astrea.linkeddata.es/shapes#9e85dbf42c101f7a1e4904663f9000f0>
+        a            sh:PropertyShape ;
+        sh:class     :Policy ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      :hasPolicy .
