@@ -10,13 +10,13 @@
 @base <https://auroral.iot.linkeddata.es/def/priv#> .
 
 <https://auroral.iot.linkeddata.es/def/priv#> rdf:type owl:Ontology ;
-                                                  dc:creator "Alba Fernández Izquierdo" ,
-                                                             "Andrea Cimmino" ,
-                                                             "Raúl García Castro" ;
-                                                  dc:description "This ontology aims at modelling the privacy for the AURORAL project." ;
-                                                  dc:title "The AURORAL Privacy Ontology" ;
-                                                  <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                                  owl:versionInfo "0.0.1" .
+                                               dc:creator "Alba Fernández Izquierdo" ,
+                                                          "Andrea Cimmino" ,
+                                                          "Raúl García Castro" ;
+                                               dc:description "This ontology aims at modelling the privacy for the AURORAL project." ;
+                                               dc:title "The AURORAL Privacy Ontology" ;
+                                               <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
+                                               owl:versionInfo "0.0.1" .
 
 #################################################################
 #    Annotation properties
@@ -46,6 +46,7 @@ dc:title rdf:type owl:AnnotationProperty .
 priv:definesRule rdf:type owl:ObjectProperty ;
                  rdfs:domain priv:Policy ;
                  rdfs:range priv:Rule ;
+                 rdfs:comment "A relationship between policy and the rules it defines" ;
                  rdfs:label "defines rule" .
 
 
@@ -53,13 +54,15 @@ priv:definesRule rdf:type owl:ObjectProperty ;
 priv:hasAction rdf:type owl:ObjectProperty ;
                rdfs:domain priv:Rule ;
                rdfs:range priv:Action ;
+               rdfs:comment "A relationship between the rule and the actions it defines" ;
                rdfs:label "has action" .
 
 
-###  https://auroral.iot.linkeddata.es/def/privy#hasPolicy
+###  https://auroral.iot.linkeddata.es/def/priv#hasPolicy
 priv:hasPolicy rdf:type owl:ObjectProperty ;
                rdfs:domain core:Item ;
                rdfs:range priv:Policy ;
+               rdfs:comment "A relatioship between the item and its policy" ;
                rdfs:label "has policy" .
 
 
@@ -67,6 +70,7 @@ priv:hasPolicy rdf:type owl:ObjectProperty ;
 priv:hasRuleTarget rdf:type owl:ObjectProperty ;
                    rdfs:domain priv:Rule ;
                    rdfs:range priv:RuleTarget ;
+                   rdfs:comment "A relationship between the rule and its targets" ;
                    rdfs:label "has rule target" .
 
 
@@ -74,7 +78,7 @@ priv:hasRuleTarget rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://auroral.iot.linkeddata.es/def/privy#hasDescription
+###  https://auroral.iot.linkeddata.es/def/priv#hasDescription
 priv:hasDescription rdf:type owl:DatatypeProperty ;
                     rdfs:label "has description" .
 
@@ -94,22 +98,24 @@ core:Item rdf:type owl:Class ;
                             owl:onProperty priv:hasPolicy ;
                             owl:allValuesFrom priv:Policy
                           ] ;
+          rdfs:comment "A physical or virtual thing" ;
           rdfs:label "Item" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/priv#Action
 priv:Action rdf:type owl:Class ;
-            rdfs:subClassOf core:Item ,
-                            [ rdf:type owl:Restriction ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty priv:hasDescription ;
                               owl:someValuesFrom xsd:string
                             ] ;
+            rdfs:comment "The possible actions of a rule: the visibility, accessibility" ;
             rdfs:label "Action" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/priv#Permission
 priv:Permission rdf:type owl:Class ;
                 rdfs:subClassOf priv:Rule ;
+                rdfs:comment "The ability to exercise an Action over an Asset. The Permission MAY also have the duty property that expresses an agreed Action that MUST be exercised (as a pre-condition to be granted the Permission)." ;
                 rdfs:label "Permission" .
 
 
@@ -123,12 +129,14 @@ priv:Policy rdf:type owl:Class ;
                               owl:onProperty priv:hasName ;
                               owl:someValuesFrom xsd:string
                             ] ;
+            rdfs:comment "A non-empty group of Permissions (via the permission property) and/or Prohibitions (via the prohibition property) and/or Duties (via the obligation property)" ;
             rdfs:label "Policy" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/priv#Prohibition
 priv:Prohibition rdf:type owl:Class ;
                  rdfs:subClassOf priv:Rule ;
+                 rdfs:comment "The inability to exercise an Action over an Asset." ;
                  rdfs:label "Prohibition" .
 
 
@@ -138,11 +146,13 @@ priv:Rule rdf:type owl:Class ;
                             owl:onProperty priv:hasDescription ;
                             owl:someValuesFrom xsd:string
                           ] ;
+          rdfs:comment "An abstract concept that represents the common characteristics of Permissions, Prohibitions, and Duties." ;
           rdfs:label "Rule" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/priv#RuleTarget
 priv:RuleTarget rdf:type owl:Class ;
+                rdfs:comment "The targets for which are generating the rules" ;
                 rdfs:label "Rule Target" .
 
 
