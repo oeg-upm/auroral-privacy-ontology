@@ -1,0 +1,48 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Service1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Item"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/privacy#hasPOlicy" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Policy1010"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Permission",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Permissionservice1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Permission"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/privacy#hasAction" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Accessibility"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/privacy#hasTargetRule" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/privacy#movie"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Policy1010",
+  "https://auroral.iot.linkeddata.es/def/privacy#definesRule" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Permissionservice1"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/privacy#definesRule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasPOlicy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasTargetRule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

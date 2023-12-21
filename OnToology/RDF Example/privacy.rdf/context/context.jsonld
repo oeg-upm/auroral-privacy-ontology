@@ -1,0 +1,22 @@
+{
+  "@context" : {
+    "hasAction" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasAction"
+    },
+    "hasTargetRule" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasTargetRule"
+    },
+    "hasPOlicy" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#hasPOlicy"
+    },
+    "definesRule" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#definesRule"
+    },
+    "Item" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Item"
+    },
+    "Permission" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/privacy#Permission"
+    }
+  }
+}

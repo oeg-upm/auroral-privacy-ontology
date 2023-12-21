@@ -1,0 +1,16 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "priv:RuleTarget" "priv:Rule" "priv:Policy" "priv:Action" "core:Item" ; /*classes style*/
+	"NULL" -> "priv:Policy" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "priv:hasPolicy" [ label = "owl:onProperty" ];
+	"NULL" -> "priv:hasName" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:string" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "priv:hasDescription" [ label = "owl:onProperty" ];
+	"priv:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
+	"core:Item" -> "priv:Policy" [ label = "priv:hasPolicy" ];
+	"priv:Policy" -> "priv:Rule" [ label = "priv:definesRule" ];
+	"priv:Rule" -> "priv:Action" [ label = "priv:hasAction" ];
+	"priv:Rule" -> "priv:RuleTarget" [ label = "priv:hasRuleTarget" ];
+
+}

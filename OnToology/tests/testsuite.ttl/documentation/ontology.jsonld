@@ -1,0 +1,196 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/def/vtc#TestSuite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "There are two types of action: Visibility and Accessibility"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Accessibility type Action"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "There are two types of rules: Permission and Prohibition"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Prohibition subclassOf Rule"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "There are two types of rules: Permission and Prohibition"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Permission subClassOf Rule"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "There are two types of action: Visibility and Accessibility"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Visibility type Action"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "A rule has an action"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Rule hasAction Action"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "There are two types of target: Friends, Eveyone or None"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "None type RuleTarget"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "There are two types of target: Friends, Eveyone or None"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "All type RuleTarget"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "There are two types of target: Friends, Eveyone or None"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Friends type RuleTarget"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "A rule can have a target"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Rule hasRuleTarget RuleTarget"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "A policy contains rules"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Policy definesRule Rule"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#Test9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "An asset can have a policy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Item hasPolicy Policy"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/priv"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/def/vtc#TestSuite"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#TestCaseDesign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#desiredBehaviour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
