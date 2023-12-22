@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vtc="https://w3id.org/def/vtc#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#belongsTo -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/vtc#belongsTo"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#desiredBehaviour -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/def/vtc#desiredBehaviour"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/vtc#TestSuite -->
+
+
+    <Class rdf:about="http://w3id.org/def/vtc#TestSuite"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestCaseDesign -->
+
+
+    <Class rdf:about="https://w3id.org/def/vtc#TestCaseDesign"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test1 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test1">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>There are two types of action: Visibility and Accessibility</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>Accessibility type Action</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test10 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test10">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>There are two types of rules: Permission and Prohibition</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>Prohibition subclassOf Rule</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test11 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test11">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>There are two types of rules: Permission and Prohibition</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>Permission subClassOf Rule</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test2 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test2">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>There are two types of action: Visibility and Accessibility</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>Visibility type Action</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test3 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test3">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>A rule has an action</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>Rule hasAction Action</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test4 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test4">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>There are two types of target: Friends, Eveyone or None</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>None type RuleTarget</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test5 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test5">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>There are two types of target: Friends, Eveyone or None</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>All type RuleTarget</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test6 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test6">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>There are two types of target: Friends, Eveyone or None</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>Friends type RuleTarget</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test7 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test7">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>A rule can have a target</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>Rule hasRuleTarget RuleTarget</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test8 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test8">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>A policy contains rules</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>Policy definesRule Rule</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#Test9 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#Test9">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <terms:description>An asset can have a policy</terms:description>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv"/>
+        <vtc:desiredBehaviour>Item hasPolicy Policy</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestSuite"/>
+        <terms:source rdf:resource="https://auroral.iot.linkeddata.es/def/priv"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"base:Test4" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+	"base:Test9" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+	"base:Test2" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+	"base:Test7" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+	"base:Test5" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+	"base:Test10" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+	"base:Test3" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+	"base:Test8" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+	"base:Test1" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+	"base:TestsuitePriv" -> "https://auroral.iot.linkeddata.es/def/priv" [ label = "dc:source" ];
+	"base:Test6" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+	"base:Test11" -> "base:TestsuitePriv" [ label = ":belongsTo" ];
+
+}

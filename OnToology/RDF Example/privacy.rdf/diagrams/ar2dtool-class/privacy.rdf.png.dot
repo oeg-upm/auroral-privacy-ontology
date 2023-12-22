@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"priv:Policy1010" -> "priv:Permissionservice1" [ label = "priv:definesRule" ];
+	"priv:Permissionservice1" -> "priv:movie" [ label = "priv:hasTargetRule" ];
+	"priv:Permissionservice1" -> "priv:Accessibility" [ label = "priv:hasAction" ];
+	"core:Service1" -> "priv:Policy1010" [ label = "priv:hasPOlicy" ];
+
+}

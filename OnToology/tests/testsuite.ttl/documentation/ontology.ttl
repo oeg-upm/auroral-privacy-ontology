@@ -1,0 +1,141 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/vtc#belongsTo
+<https://w3id.org/def/vtc#belongsTo> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/vtc#desiredBehaviour
+<https://w3id.org/def/vtc#desiredBehaviour> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/def/vtc#TestSuite
+<http://w3id.org/def/vtc#TestSuite> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/vtc#TestCaseDesign
+<https://w3id.org/def/vtc#TestCaseDesign> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test1
+<https://auroral.iot.linkeddata.es/tests/priv#Test1> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                     <http://purl.org/dc/terms/description> "There are two types of action: Visibility and Accessibility" ;
+                                                     <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                     <https://w3id.org/def/vtc#desiredBehaviour> "Accessibility type Action" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test10
+<https://auroral.iot.linkeddata.es/tests/priv#Test10> rdf:type owl:NamedIndividual ,
+                                                               <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                      <http://purl.org/dc/terms/description> "There are two types of rules: Permission and Prohibition" ;
+                                                      <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                      <https://w3id.org/def/vtc#desiredBehaviour> "Prohibition subclassOf Rule" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test11
+<https://auroral.iot.linkeddata.es/tests/priv#Test11> rdf:type owl:NamedIndividual ,
+                                                               <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                      <http://purl.org/dc/terms/description> "There are two types of rules: Permission and Prohibition" ;
+                                                      <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                      <https://w3id.org/def/vtc#desiredBehaviour> "Permission subClassOf Rule" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test2
+<https://auroral.iot.linkeddata.es/tests/priv#Test2> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                     <http://purl.org/dc/terms/description> "There are two types of action: Visibility and Accessibility" ;
+                                                     <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                     <https://w3id.org/def/vtc#desiredBehaviour> "Visibility type Action" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test3
+<https://auroral.iot.linkeddata.es/tests/priv#Test3> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                     <http://purl.org/dc/terms/description> "A rule has an action" ;
+                                                     <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                     <https://w3id.org/def/vtc#desiredBehaviour> "Rule hasAction Action" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test4
+<https://auroral.iot.linkeddata.es/tests/priv#Test4> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                     <http://purl.org/dc/terms/description> "There are two types of target: Friends, Eveyone or None" ;
+                                                     <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                     <https://w3id.org/def/vtc#desiredBehaviour> "None type RuleTarget" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test5
+<https://auroral.iot.linkeddata.es/tests/priv#Test5> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                     <http://purl.org/dc/terms/description> "There are two types of target: Friends, Eveyone or None" ;
+                                                     <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                     <https://w3id.org/def/vtc#desiredBehaviour> "All type RuleTarget" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test6
+<https://auroral.iot.linkeddata.es/tests/priv#Test6> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                     <http://purl.org/dc/terms/description> "There are two types of target: Friends, Eveyone or None" ;
+                                                     <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                     <https://w3id.org/def/vtc#desiredBehaviour> "Friends type RuleTarget" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test7
+<https://auroral.iot.linkeddata.es/tests/priv#Test7> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                     <http://purl.org/dc/terms/description> "A rule can have a target" ;
+                                                     <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                     <https://w3id.org/def/vtc#desiredBehaviour> "Rule hasRuleTarget RuleTarget" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test8
+<https://auroral.iot.linkeddata.es/tests/priv#Test8> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                     <http://purl.org/dc/terms/description> "A policy contains rules" ;
+                                                     <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                     <https://w3id.org/def/vtc#desiredBehaviour> "Policy definesRule Rule" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#Test9
+<https://auroral.iot.linkeddata.es/tests/priv#Test9> rdf:type owl:NamedIndividual ,
+                                                              <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                                     <http://purl.org/dc/terms/description> "An asset can have a policy" ;
+                                                     <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> ;
+                                                     <https://w3id.org/def/vtc#desiredBehaviour> "Item hasPolicy Policy" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv
+<https://auroral.iot.linkeddata.es/tests/priv#TestsuitePriv> rdf:type owl:NamedIndividual ,
+                                                                      <http://w3id.org/def/vtc#TestSuite> ;
+                                                             <http://purl.org/dc/terms/source> <https://auroral.iot.linkeddata.es/def/priv> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
